@@ -3,8 +3,7 @@ wget -O w7x64.img https://bit.ly/akuhnetw7X64
 echo "Download ngrok"
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-read -p "Ctrl + V Authtoken: " CRP 
-./ngrok authtoken $CRP 
+./ngrok authtoken 2TsAd0jxo3kH5BD5S1gSXf6Gj14_Kavrj9Zyt6HsEwkeLnxD 
 nohup ./ngrok tcp 5900 &>/dev/null &
 echo Downloading Qemu
 sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
